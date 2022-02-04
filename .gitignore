@@ -1,0 +1,9 @@
+log
+pids
+.DS_Store
+.env
+.notes
+dump.rdb
+npm-debug.log
+node_modules
+production-data.txt

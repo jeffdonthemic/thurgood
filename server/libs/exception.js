@@ -1,0 +1,13 @@
+'use strict'
+
+/**
+ * A custom exception object
+ */
+module.exports = function ThurgoodException(message, extra) {
+  Error.captureStackTrace(this, this.constructor);
+  this.name = this.constructor.name;
+  this.message = message;
+  this.extra = extra;
+};
+
+require('util').inherits(module.exports, Error);
